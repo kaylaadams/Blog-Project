@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+    <a class="navbar-brand" href="/">My Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {{ activePage ===  'home' ? 'active' : '' }}">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item {{ activePage === 'users' ? 'active' : '' }}">
+          <a class="nav-link" href="/users">User Management</a>
+        </li>
+        <li class="nav-item {{ activePage === 'donate' ? 'active' : '' }}">
+          <a class="nav-link" href="/donate">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+      <form class='form-inline'>
+            <a href='/compose' class='btn btn-primary' role='button'>Compose</a>
+        </form>
+    </div>
+  </nav>

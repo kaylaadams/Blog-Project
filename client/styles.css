@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+.post {
+    position: relative;
+    color: #741974;
+    border-radius: 15px 50px 30px;
+    background-color: rgba(72, 168, 168, 0.5);
+    padding: 20px;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;  
+}
+#compose {
+    position: relative;
+    color: #4DEEEE;
+    background-color: #EC30EC;
+    width: 7em;
+    height: 4em; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+body {
+    margin: 10px 400px;
+    position: absolute;
+    background-image: url("https://iso.500px.com/wp-content/uploads/2014/11/Northern-Lights-Norway.jpg");
+    background-size: cover;
+    background-color: #82D4EF;
+    opacity: 1;
+    padding-top: 56px;
+}
+p {
+    font-weight: bold;
+}
+#update {
+    color: #4DEEEE;
+    background-color: #EC30EC;   
+}
+#update-btn {
+    color: #EC30EC;
+    background-color: #4DEEEE;
+}
+#delete-btn {
+    color: #4DEEEE;
+    background-color: #EC30EC;
+}
+.save-btn {
+    color: #EC30EC;
+    background-color: #4DEEEE;
+}
+.post-box {
+    text-align: center;
+}
+.user-container {
+    margin: 2em;
+    background-color: rgba(72, 168, 168, 0.5);
+}
+.jumbotron {
+    background-color: rgba(202, 195, 195, 0.2);
+}
+.donate-container {
+    margin: 2em;
+    background-color: rgba(72, 168, 168, 0.5);
+}
+#card-field {
+    background-color: white;
+}
+.donate {
+    background-color: rgba(72, 168, 168, 0.5);
+}

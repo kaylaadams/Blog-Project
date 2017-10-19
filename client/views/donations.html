@@ -1,0 +1,21 @@
+<main-navigation active-page= "'donate'"></main-navigation>
+
+<div class="jumbotron donate">
+    <h1 class="display-3">Welcome to my blog!</h1>
+    <p class="lead">Want to keep the posts coming?</p>
+    <hr class="my-4">
+    <p>Want to contribute?</p>
+</div>
+
+
+
+
+<div class= 'donate-container'>
+<form ng-submit="process()">
+    <input type="number"  class="form-control" ng-model="amount">
+    <label for="card-field">Credit Card</label>
+    <div id="card-field"></div>
+    <p>{{ error }}</p>
+    <input type="submit" value="Donate" class="form-control" >
+</form>
+</div>

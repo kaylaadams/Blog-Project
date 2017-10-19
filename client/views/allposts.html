@@ -1,0 +1,25 @@
+<main-navigation active-page ="'home'" ></main-navigation>
+
+<div class="jumbotron">
+    <h1 class="display-3">Welcome to my blog!</h1>
+    <p class="lead">This is home to my ramblings and musings.</p>
+    <hr class="my-4">
+    <p>Want to contribute?</p>
+    <button type="button" class="btn btn-success" ng-click="goToLogin()">Login</button>
+</div>
+
+<div id="post-container">
+    <div class="post" ng-repeat="post in posts">
+        <h1>{{ post.title }}</h1>
+        <h3>Name: {{ post.authorfirstname }} {{ post.authorlastname }}</h3>
+        <h4>Category: {{ post.categoryname }}
+            <h4>
+                <h5>{{ post.createdAt | date: 'short' }}
+                    <h5>
+                        <p>
+                            <a ng-href="/{{ post.id }}">Read</a>
+                        </p>
+
+    </div>
+
+</div>

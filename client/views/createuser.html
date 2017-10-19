@@ -1,0 +1,13 @@
+<main-navigation></main-navigation>
+
+<h1> Please Create a new user</h1>
+<div>
+        <form ng-submit="postUser()">
+                <h2>Add New User</h2>
+                <input type="text" placeholder="First Name" ng-model="newFirstname">
+                <input type="text" placeholder="Last Name" ng-model="newLastname">
+                <input type="email" placeholder="Email" ng-model="newEmail">
+                <input type="password" placeholder="Password" ng-model="newPassword">
+                <button>Create</button>
+        </form>
+</div>

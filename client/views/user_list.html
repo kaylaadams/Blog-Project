@@ -1,0 +1,16 @@
+<main-navigation active-page="'users'"></main-navigation>
+
+
+
+<div class='user-container' ng-repeat="user in users">
+    <h3>{{user.firstname}} {{user.lastname}}</h3>
+    <p> {{user.email}} </p>
+    <p> {{user.role}} </p>
+    <p>
+        <a class="btn btn-primary" href="/users/{{user.id}}" role="button">View User</a>
+    </p>
+</div>
+
+
+
+<button ng-click="composeUser()">Create User</button>

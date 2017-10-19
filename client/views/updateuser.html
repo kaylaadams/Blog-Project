@@ -1,0 +1,17 @@
+<main-navigation ></main-navigation>
+
+
+<h2>User Update</h2>
+<form ng-submit="updateUser()">
+    <div>
+        <input type="text" placeholder="{{user.firstname}}" ng-model="user.firstname">
+    </div>
+    <div>
+        <input type="text" placeholder="{{user.lastname}}" ng-model="user.lastname">
+    </div>
+    <div>
+        <input type="text" placeholder="{{user.email}}" ng-model="user.email">
+    </div>
+    <input type="submit" value="Save" role="button">
+
+</form>
