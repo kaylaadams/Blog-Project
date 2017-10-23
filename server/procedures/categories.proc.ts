@@ -1,21 +1,17 @@
 import { row, rows, empty } from '../config/db';
 
-export function all(): Promise<Array<models.IPost>> {
-    return rows('getAllPosts');
+export function all(): Promise<Array<models.ICategory>> {
+    return rows('getCategories');
 }
 
-export function read(id: number): Promise<models.IPost> {
-    return row('getSinglePost', [id]);
-}
-
-export function update(title: string, content: string, categoryid: number, id: number) {
-    return empty('updatePost', [title, content, categoryid, id]);
+export function update(name:string, id: number) {
+    return empty('updateCategory', [name, id]);
 }
 
 export function destroy(id: number) {
-    return empty('deletePost', [id]);
+    return empty('deleteCategory', [id]);
 }
 
-export function create(title: string, content: string, userid: number, categoryid: number) {
-    return row('newPost', [title, content, userid, categoryid]);
+export function create(name:string) {
+    return row('newCategory', [name]);
 }

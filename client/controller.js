@@ -22,6 +22,7 @@ angular.module('blogApp.controllers', [])
         $scope.post.categoryid = String($scope.post.categoryid);
     });
     $scope.categories = Category.query();
+    console.log($scope.categories);
 
     $scope.updatePost = function () {
         $scope.post.$update(function (success) {
