@@ -11,7 +11,7 @@ let clientPath = path.join(__dirname, '../client');
 let app = express();
 
 prerender.set('prerenderToken', process.env.PRERENDER_TOKEN);
-prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
+// prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
 
 console.log(process.env.MY_VARIABLE);
 
